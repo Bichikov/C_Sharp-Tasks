@@ -9,8 +9,8 @@
 void SpiralArray(int[,] array1)
 {
     int num = 1; // 
-    int i = 0; // 
-    int j = 0; //   
+    int i = 0; //
+    int j = 0; //  
     while (num <= array1.GetLength(0) * array1.GetLength(1)) //  <= 16
     {
         array1[i, j] = num;
@@ -21,7 +21,6 @@ void SpiralArray(int[,] array1)
         else if (i >= j && i + j > array1.GetLength(0) - 1)
             j--;
         else
-            
         num++;
     }
 }
